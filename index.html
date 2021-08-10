@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Laboratory Recent post </title>
+</head>
+<body>
+     <h1>MRLaboratory.info Blog 100 Recent post </h1>
+<img src="https://i.imgur.com/w1WZSYt.png" alt="MRLaboratory.info Blog 100 Recent post" title="MRLaboratory.info Blog 100 Recent post">
+    <style scoped='' type="text/css">
+        ul#recent-posts{list-style:none;margin:10px 0 0;border:1px solid #ddd;border-radius:7px;padding:5px 0;text-align:left}li.recent-posts{display:block;clear:both;background:#fff;border-bottom:1px solid #ddd;overflow:hidden;list-style:none;word-break:break-word;padding:8px;margin:0 0 5px;line-height:1.7;transition:all .3s}
+        li.recent-posts:last-child{border-bottom:0}
+        li.recent-posts a{color:#333;background:transparent}li.recent-posts a:hover{color:#222!important}
+        </style>
+        <ul id="recent-posts"></ul>
+        <script>
+        //<![CDATA[
+        var homePage = "https://www.mrlaboratory.info/",
+        numPosts = 100;
+        function recentPosts(a){
+        if(document.getElementById("recent-posts")){var e=a.feed.entry,title,link,content="",ct=document.getElementById("recent-posts");for(var i=0;i<numPosts;i++){for(var j=0;j<numPosts;j++){if(e[i].link[j].rel=="alternate"){link=e[i].link[j].href;break}}var title=e[i].title.$t;content+='<li class="recent-posts"><a href="'+link+'" title="'+title+'" target="_blank">'+title+'</a></li>'}ct.innerHTML=content}}var rcp=document.createElement('script');rcp.src=homePage+'/feeds/posts/summary?alt=json-in-script&orderby=published&max-results='+numPosts+'&callback=recentPosts';document.getElementsByTagName('head')[0].appendChild(rcp);
+        //]]>
+        </script>
+<script type='application/ld+json'>
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "MR Laboratory",
+      "url": "https://www.mrlaboratory.info",
+      "website": "https://www.mrlaboratory.com",
+      "Founder" : "Md Mijanur Rahaman",
+      "address": "Bangladesh",
+      "Facebook" : "https://facebook.com/mrlaboratory",
+      "Pinterest" : "https://www.pinterest.com/mrlaboratory",
+      "sameAs": [
+        "https://facebook.com/mrlaboratory",
+        "https://twitter.com/mrlaboratory2",
+        "https://www.linkedin.com/in/mrlaboratory", 
+        "https://instagram.com/mrlaboratorypro",
+        "https://www.youtube.com/mrlaboratorypro",
+        "https://mrlaboratory.com/",
+        "https://about.me/mrlaboratory",
+        "https://github.com/mrlaboratory",
+        "https://www.pinterest.com/mrlaboratory/",
+        "https://mrlaboratory.tumblr.com",
+        "https://mrlaboratory.quora.com/"
+      ]
+    }
+  </script>
+</body>
+</html>
